@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yummrolls.yumrolls.activities.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/fastfood1"
+            android:scaleType="fitCenter"
+            android:alpha="0.6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.yummrolls.yumrolls.views.StradustFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="80dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"/>
+        <com.yummrolls.yumrolls.views.StradustFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We are YumRolls!!"
+            android:textSize="40dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"/>
+
+            <ProgressBar
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/progressbar"
+                android:progressDrawable="@xml/progress"
+                android:layout_centerInParent="true"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
